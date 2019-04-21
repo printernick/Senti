@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Senti</string>
+
+    <string name="logIn">Log in</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="or">OR</string>
+    <string name="createAccount">Create an account? SIGN UP</string>
 </resources>
