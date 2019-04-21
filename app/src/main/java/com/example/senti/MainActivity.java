@@ -1,12 +1,14 @@
 package com.example.senti;
 
 import android.content.Intent;
+import android.os.Debug;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -31,14 +33,16 @@ public class MainActivity extends AppCompatActivity {
         emailField = findViewById(R.id.fieldEmail);
         passwordField = findViewById(R.id.fieldPassword);
 
-        findViewById(R.id.signIn).setOnClickListener(new View.OnClickListener() {
+        Button signInBtn = findViewById(R.id.signIn);
+        signInBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 signIn(emailField.getText().toString(), passwordField.getText().toString());
             }
         });
 
-        findViewById(R.id.signUp).setOnClickListener(new View.OnClickListener() {
+        Button signUpBtn = findViewById(R.id.signUp);
+        signUpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, RegisterActivity.class));
@@ -120,7 +124,6 @@ public class MainActivity extends AppCompatActivity {
     {
         if (user != null)
         {
-            Log.d("login", "went into user not null update UI");
             startActivity(new Intent(MainActivity.this, CalendarActivity.class));
         }
 
