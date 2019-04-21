@@ -6,4 +6,6 @@
     <string name="password">Password</string>
     <string name="or">OR</string>
     <string name="createAccount">Create an account? SIGN UP</string>
+    <string name="name">Name</string>
+    <string name="signUp">Sign Up</string>
 </resources>
