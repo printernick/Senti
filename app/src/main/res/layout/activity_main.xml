@@ -10,44 +10,57 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
         android:text="Hello World!"
-        tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="356dp" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/signIn"
+        app:layout_constraintStart_toEndOf="@+id/signIn" />
 
     <EditText
         android:id="@+id/fieldEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="137dp"
         android:ems="10"
         android:hint="email"
         android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="137dp" />
+        app:layout_constraintEnd_toEndOf="@+id/fieldPassword"
+        app:layout_constraintStart_toStartOf="@+id/fieldPassword"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/fieldPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="43dp"
         android:ems="10"
         android:inputType="textPassword"
         android:text="pw"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="225dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fieldEmail" />
 
     <Button
         android:id="@+id/signIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign In"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="342dp" />
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginBottom="36dp"
+        android:text="@string/logIn"
+        app:layout_constraintBottom_toTopOf="@+id/signUp"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/signUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginBottom="257dp"
         android:text="Sign Up"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="426dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
