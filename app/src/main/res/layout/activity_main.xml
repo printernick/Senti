@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D5EDF8"
     tools:context=".MainActivity"
     tools:visibility="visible">
 
@@ -20,8 +21,7 @@
         app:layout_constraintEnd_toEndOf="@+id/fieldPassword"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/fieldPassword"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/fieldPassword"
@@ -39,14 +39,14 @@
         app:layout_constraintBottom_toTopOf="@+id/signIn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fieldEmail"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/fieldEmail" />
 
     <Button
         android:id="@+id/signIn"
         android:layout_width="163dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="425dp"
+        android:background="#EEE48E"
         android:text="@string/logIn"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -93,7 +93,7 @@
         app:layout_constraintEnd_toStartOf="@+id/view"
         app:layout_constraintStart_toEndOf="@+id/view3"
         app:layout_constraintTop_toBottomOf="@+id/signIn"
-        app:layout_constraintVertical_bias="0.151" />
+        app:layout_constraintVertical_bias="0.152" />
 
     <Button
         android:id="@+id/signUp"
